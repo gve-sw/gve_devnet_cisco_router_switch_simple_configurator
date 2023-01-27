@@ -1,0 +1,62 @@
+{% extends "masterPage.html" %}
+{% block content %}
+
+    <form action="/" method="POST">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Connection</h1>
+
+                <div class="form-group">
+                    <div class="form-group__text select">
+                        <select id="select-type-basic" name="device_type">
+                            <option value="cisco_ios">cisco_ios</option>
+                            <option value="cisco_nxos">cisco_nxos</option>
+                            <option value="cisco_xe">cisco_xe</option>
+                            <option value="cisco_xr">cisco_xr</option>
+                        </select>
+                        <label for="select-type-basic">Device Type</label>
+                    </div>
+                </div>
+
+                <div class="form-group base-margin-bottom">
+                    <div class="form-group__text">
+                        <input type="text" id="_uid7033eb36" name="ip_address">
+                        <label>IP Address or Hostname</label>
+                    </div>
+                </div>
+                <div class="form-group base-margin-bottom">
+                    <div class="form-group__text">
+                        <input type="text" id="_uidf8812caa" name="username">
+                        <label>Username</label>
+                    </div>
+                </div>
+                <div class="form-group base-margin-bottom">
+                    <div class="form-group__text">
+                        <input type="text" id="_uid2cdb2063" name="password">
+                        <label>Password</label>
+                    </div>
+                </div>
+                <div class="form-group base-margin-bottom">
+                    <div class="form-group__text">
+                        <input type="text" id="_uidf0a9235c" name="secret">
+                        <label>Secret</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1>Commands</h1>
+                <div class="form-group base-margin-bottom">
+                    <div class="form-group__text">
+                        <textarea rows="20" class="textarea" id="_uid27950f1c" name="configuration_commands"></textarea>
+                        <label>Configuration Commands</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c3436">
+            <button class="btn btn--medium" id="_uid1b289aea" type="submit">Submit</button>
+        </div>
+    </form>
+
+
+{% endblock %}

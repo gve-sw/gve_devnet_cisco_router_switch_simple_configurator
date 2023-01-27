@@ -1,0 +1,28 @@
+{% extends "masterPage.html" %}
+{% block content %}
+
+    <main class="c3512">
+        <div></div>
+        <div class="c3572">
+            <h2>Configuration Results</h2>
+            <div class="divider"></div>
+            {% if exception_type == Null %}
+                <ol id="_uid1ada8a831">
+                    <li>Device Type: {{ device_type }}</li>
+                    <li>IP Address: {{ ip_address }}</li>
+                    <li>Username: {{ username }}</li>
+                    <li>Message from device: {{ device_message }}</li>
+                </ol>
+            {% else %}
+                <ol id="_uid1ada8a832">
+                    <li>Exception Type: {{ exception_type }}</li>
+                    <li>Exception Message: {{ exception_message }}</li>
+                </ol>
+            {% endif %}
+            <div class="divider"></div>
+        </div>
+    </main>
+
+
+
+{% endblock %}

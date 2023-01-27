@@ -1,0 +1,28 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+}
+
+.c2100 {
+   height: 100%;
+}
+
+.c3436 {
+   min-height: 100px;
+}
+
+.col-md-3 {
+   padding: 50px;
+}
+.col-md-9 {
+   padding: 50px;
+}
+.c3436 {
+   padding: 50px;
+}
+.c3512 {
+   padding: 50px;
+}
